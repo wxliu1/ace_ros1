@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?> -->
+<package format="2">
+  <name>test_sync_cb</name>
+  <version>0.0.1</version>
+  <description>The test_sync_cb package </description>
+  <maintainer email="wx@wx.com">zc</maintainer>
+  <license>Apache License 2.0</license>
+  <author>lwx</author>
+  <author email="wx@wx.com">wx</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>rosmsg</depend>
+  <depend>sensor_msgs</depend>
+
+  <depend>sensor_pub</depend>
+  <depend>message_filters</depend>
+  <depend>nav_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>myodom</depend> <!--add this module to ensure find it before compile-->
+  <depend>atp_info</depend>
+  <depend>rosbag</depend>
+
+  <export>
+  </export>
+</package>
